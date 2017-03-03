@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kanth Kumar Dayanand</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+        <link rel="icon" href="images/kanth.png"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Kanth Kumar Dayanand</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#workexperience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="Resume.pdf">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 profile-pic">
+                        <img src="images/kanth.png" alt="Kanth Kumar Dayanand" class="img-circle"/>
+                    </div>
+                    <div class="col-lg-10 about-details">
+                        <div>
+                            <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                            <span class="email">kkd6428@rit.edu / kanthkumar46@gmail.com</span>
+                        </div>
+                        <p></p>
+                        <span>
+                            <a href="https://www.linkedin.com/in/kanthkumar46"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/kanthkumar46?tab=repositories"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href="" data-toggle="modal" data-target="#messageModal"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a>
+                        </span>
+                        <p></p>
+                        <p>I'm a final year Computer Science graduate student at <a href="https://www.cs.rit.edu">Rochester Institute of Technology</a>. Currently working as Software Engineer Co-op at Intuit. Interested in Distributed Systems</p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="workexperience" class="workexperience-section">
+            <div class="container">
+                <h3>Work Experience</h3>
+                <hr/>
+                <div class="row">
+                    <div class="col-lg-12 work-details">
+                        <div class="media"> 
+                            <div class="media-left"> 
+                                <a href="http://www.intuit.com/"> 
+                                    <img class="media-object" src="images/intuit.png" data-holder-rendered="true"/>
+                                </a> 
+                            </div> 
+                            <div class="media-body"> 
+                                <h4 class="media-heading">Software Engineer Co-op, San Diego, California</h4> 
+                                <h5>June 2016 - Present</h5>
+                                <h5>TurboTax</h5>
+                                <p>Developed a web based tool for cross-checking the Jira issues with GitHub commits to improve the release process of our backend services. Java, Spring, GitHub-API, Bootstrap</p>
+                                <p>Worked on implementing Circuit-Breakers for Java services to enable resilience using Netflix Hystrix. Java, Spring</p>
+                                <p>Currently working on adding the new features to Java Services for importing customer tax documents to TurboTax. Spring</p>
+                            </div>
+                        </div>
+                         <div class="media"> 
+                            <div class="media-left"> 
+                                <a href="https://cs.rit.edu/"> 
+                                    <img class="media-object" src="images/rit.png" data-holder-rendered="true"/>
+                                </a> 
+                            </div> 
+                            <div class="media-body"> 
+                                <h4 class="media-heading">Graduate Research Assistant</h4> 
+                                <h5>September 2015 - May 2016</h5>
+                                <h5><a href="http://www.cs.rit.edu/~pencilpuzzle">PencilPuzzle</a></h5>
+                                <p>Designed and developed a website for listing the puzzles and lab assignments related to introductory Computer Science topics. AngularJS, Bootstrap</p>
+                            </div> 
+                        </div>
+                        <div class="media"> 
+                            <div class="media-left"> 
+                                <a href="http://www.cisco.com/"> 
+                                    <img class="media-object" src="images/cisco.png" data-holder-rendered="true"/>
+                                </a> 
+                            </div> 
+                            <div class="media-body"> 
+                                <h4 class="media-heading">Software Engineering Intern, San Jose, California</h4> 
+                                <h5>June 2015 - August 2015</h5>
+                                <h5>VxLAN - Virtual Extensible LAN</h5>
+                                <p>Developed a cli command for comparing the run-time configs with the configs stored in In-memory database.</p>
+                                <h5> vPC - Multihoming solution for VxLAN deployment</h5>
+                                <p>Implemented a consistency check feature for VxLAN component deployed in dual homed environment - vPC.</p>
+                            </div> 
+                        </div>
+                        <div class="media"> 
+                            <div class="media-left"> 
+                                <a href="http://www.unisys.com/"> 
+                                    <img class="media-object" src="images/unisys.png" data-holder-rendered="true"/>
+                                </a> 
+                            </div> 
+                            <div class="media-body"> 
+                                <h4 class="media-heading">Software Engineer (Consultant 4), Bangalore, India</h4> 
+                                <h5>October 2012 - August 2014</h5>
+                                <h5>Unisys Content Management System (InfoImage)</h5>
+                                <p>Developed reusable Portlets and Plugins in Liferay portal. JAVA, JavaScript (D3.js), AJAX</p>
+                                <h5>uWork - Single page Web application</h5>
+                                <p>Developed reusable templates using JavaScript templating library. Mustache.js, HTML5, AJAX, REST Services.</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h3>Projects</h3>
+                <hr/>
+                <div class="row">
+                    <div class="col-lg-12 project-details">
+                        <div>
+                            <h4><a href="https://github.com/pervasiverit/Dataflow">Dataflow Network</a></h4>
+                            <p>Developed an infrastructure using Akka concurrency framework allowing the user to write sequential programs that forms the computational ”vertices” of dataflow network and communicate via channel specified as ”edge”.</p>
+                            <p>Java, <a href="http://akka.io/">Akka</a></p>
+                        </div>
+                        <div>
+                            <h4><a href="https://github.com/kanthkumar46/HyperLogLog">HyperLogLog - Near optimal cardinality estimation algorithm</a></h4>
+                            <p>Implemented HyperLogLog algorithm for approximating the cardinality of large data sets using Map-Reduce paradigm.</p>
+                            <p>Java, <a href="https://www.cs.rit.edu/~ark/pj2.shtml">Parallel Java 2 library</a></p>
+                        </div>
+                        <div>
+                            <h4><a href="https://github.com/kanthkumar46/Distributed-File-System">Distributed File System</a></h4>
+                            <p>Implemented a Hadoop like Distributed File System. Features include basic File System commands (mkdir, ls, put, get), File Namespace, Block Replication, Fault Tolerance using HeartBeat mechanism.</p>
+                            <p>Java</p>
+                        </div>
+                        <div>
+                            <h4><a href="#">State Synchronization Protocol</a></h4>
+                            <p>Implemented a UDP based protocol for transferring the file/text reliably by synchronizing states between the client and server. Features include Client roaming, HeartBeat mechanism.</p>
+                            <p>Java, <a href="https://developers.google.com/protocol-buffers/">Protocol Buffers</a></p>
+                        </div>
+                        <div>
+                            <h4><a href="https://github.com/kanthkumar46/Content-Addressable-Network">Content-Addressable Network (CAN)</a></h4>
+                            <p>Implemented scalable, P2P distributed system that provides hash table functionality for searching files on internet-like scale. Features include Node join and leave, File insert and retrieval, Search query routing</p>
+                            <p>Java</p>
+                        </div>
+                        <div>
+                            <h4><a href="https://github.com/kanthkumar46/Ricart-Agravala">Ricart and Agravala - Mutual Exclusion Algorithm for Distributed Systems</a></h4>
+                            <p>Implemented an algorithm for mutual exclusion on a distributed system. Functionality includes Heart Beat mechanism for controlling the process entering into Critical section</p>
+                            <p>Java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="messageModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Leave a message</h4>
+                    </div>
+                    <form action="/message" method="post">
+                        <div class="modal-body">
+                            <div class="form-group required">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" required="true"/>
+                            </div>
+                            <div class="form-group required">
+                                <input type="text" class="form-control" placeholder="Email or Phone number" name="contactInfo" required="true"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" name="message" placeholder="Message..."/>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span>
+                    <a href="https://www.linkedin.com/in/kanthkumar46"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                     &nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/kanthkumar46?tab=repositories"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="" data-toggle="modal" data-target="#messageModal"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </footer>
+        <script src="lib/jQuery/jquery.min.js"></script>
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

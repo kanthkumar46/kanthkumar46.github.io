@@ -1,0 +1,110 @@
+html {
+    position: relative;
+}
+
+body {
+    font: 13px/18px "Lucida Grande", Arial, Verdana, sans-serif; 
+    background-color: #FAFAFA;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 1.729px solid transparent;
+  border-bottom-color: #E44424;
+}
+
+.navbar {
+  background: #337ab7;
+  opacity: 0.75;
+}
+
+.navbar .navbar-toggle {
+    border-color: #FFF;
+}
+
+.navbar .navbar-toggle:hover {
+    background-color: #99ccff;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar-nav > li > a {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #E44424;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.about-details .email{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+.about-details {
+  padding-top: 3%
+}
+
+.work-details .media {
+  margin-top: 10px;
+  margin-bottom: 15px
+}
+
+.project-details div {
+  margin-bottom: 15px;
+}
+
+.work-details .media img{
+  width: 64px; 
+  height: 64px;
+  border-radius: 7px;
+}
+
+.media-heading{
+  color: #585858
+}
+
+.profile-pic>img{
+    width: 172.9px;
+    height: 172.9px;
+}
+
+.about-section{
+    padding-top: 75px;
+}
+
+.workexperience-section, .projects-section{
+  padding-top: 3%
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 1%; 
+    min-height: 8%;
+}
+
+.footer span {
+    width: 150px;
+    float: right;
+}
