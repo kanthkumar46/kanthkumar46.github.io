@@ -4,10 +4,10 @@
         <title>Kanth Kumar Dayanand</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
-        <link rel="icon" href="images/kanth.png"/>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="static/lib/font-awesome/css/font-awesome.min.css"/>
+        <link rel="icon" href="static/images/kanth.png"/>
+        <link rel="stylesheet" href="public/css/style.css"/>
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <nav class="navbar navbar-fixed-top">
@@ -25,7 +25,7 @@
                         <li class="active"><a href="#about">About</a></li>
                         <li><a href="#workexperience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="Resume.pdf">Resume</a></li>
+                        <li><a href="static/Resume.pdf">Resume</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 profile-pic">
-                        <img src="images/kanth.png" alt="Kanth Kumar Dayanand" class="img-circle"/>
+                        <img src="static/images/kanth.png" alt="Kanth Kumar Dayanand" class="img-circle"/>
                     </div>
                     <div class="col-lg-10 about-details">
                         <div>
@@ -46,9 +46,7 @@
                         <span>
                             <a href="https://www.linkedin.com/in/kanthkumar46"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
                             &nbsp;&nbsp;&nbsp;
-                            <a href="https://github.com/kanthkumar46?tab=repositories"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a href="" data-toggle="modal" data-target="#messageModal"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a>
+                            <a href="https://github.com/kanthkumar46"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
                         </span>
                         <p></p>
                         <p>I'm a final year Computer Science graduate student at <a href="https://www.cs.rit.edu">Rochester Institute of Technology</a>. Currently working as Software Engineer Co-op at Intuit. Interested in Distributed Systems</p> 
@@ -66,22 +64,23 @@
                         <div class="media"> 
                             <div class="media-left"> 
                                 <a href="http://www.intuit.com/"> 
-                                    <img class="media-object" src="images/intuit.png" data-holder-rendered="true"/>
+                                    <img class="media-object" src="static/images/intuit.png" data-holder-rendered="true"/>
                                 </a> 
                             </div> 
                             <div class="media-body"> 
                                 <h4 class="media-heading">Software Engineer Co-op, San Diego, California</h4> 
-                                <h5>June 2016 - Present</h5>
+                                <h5>June 2016 - Dec 2016</h5>
                                 <h5>TurboTax</h5>
-                                <p>Developed a web based tool for cross-checking the Jira issues with GitHub commits to improve the release process of our backend services. Java, Spring, GitHub-API, Bootstrap</p>
+                                <p>Developed a tool for cross-checking the Jira issues with GitHub commits to automate the pre-release activities of our backend services and reduced the engineering time from 2hrs to few mins. Java, Spring, GitHub-API, Bootstrap</p>
                                 <p>Worked on implementing Circuit-Breakers for Java services to enable resilience using Netflix Hystrix. Java, Spring</p>
-                                <p>Currently working on adding the new features to Java Services for importing customer tax documents to TurboTax. Spring</p>
+                                <p>Implemented asynchronous caching to store financial document providers information that decreased the response time by ~2seconds</p>
+                                <p>Involved in adding new features to Java Services for importing customer tax documents to TurboTax. Spring</p>
                             </div>
                         </div>
                          <div class="media"> 
                             <div class="media-left"> 
                                 <a href="https://cs.rit.edu/"> 
-                                    <img class="media-object" src="images/rit.png" data-holder-rendered="true"/>
+                                    <img class="media-object" src="static/images/rit.png" data-holder-rendered="true"/>
                                 </a> 
                             </div> 
                             <div class="media-body"> 
@@ -94,7 +93,7 @@
                         <div class="media"> 
                             <div class="media-left"> 
                                 <a href="http://www.cisco.com/"> 
-                                    <img class="media-object" src="images/cisco.png" data-holder-rendered="true"/>
+                                    <img class="media-object" src="static/images/cisco.png" data-holder-rendered="true"/>
                                 </a> 
                             </div> 
                             <div class="media-body"> 
@@ -109,7 +108,7 @@
                         <div class="media"> 
                             <div class="media-left"> 
                                 <a href="http://www.unisys.com/"> 
-                                    <img class="media-object" src="images/unisys.png" data-holder-rendered="true"/>
+                                    <img class="media-object" src="static/images/unisys.png" data-holder-rendered="true"/>
                                 </a> 
                             </div> 
                             <div class="media-body"> 
@@ -167,50 +166,18 @@
             </div>
         </section>
 
-        <div class="modal fade" id="messageModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title">Leave a message</h4>
-                    </div>
-                    <form action="/message" method="post">
-                        <div class="modal-body">
-                            <div class="form-group required">
-                                <input type="text" class="form-control" placeholder="Your Name" name="name" required="true"/>
-                            </div>
-                            <div class="form-group required">
-                                <input type="text" class="form-control" placeholder="Email or Phone number" name="contactInfo" required="true"/>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="5" name="message" placeholder="Message..."/>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
         <footer class="footer">
             <div class="container">
                 <span>
                     <a href="https://www.linkedin.com/in/kanthkumar46"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
                      &nbsp;&nbsp;&nbsp;
-                    <a href="https://github.com/kanthkumar46?tab=repositories"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="" data-toggle="modal" data-target="#messageModal"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/kanthkumar46"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
                 </span>
             </div>
         </footer>
-        <script src="lib/jQuery/jquery.min.js"></script>
-        <script src="lib/angular/angular.min.js"></script>
-        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script src="static/lib/jQuery/jquery.min.js"></script>
+        <script src="static/lib/angular/angular.min.js"></script>
+        <script src="static/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/js/app.js"></script>
     </body>
 </html>
